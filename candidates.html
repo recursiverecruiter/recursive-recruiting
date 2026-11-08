@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Candidates | Recursive Recruiting</title>
+  <meta name="description" content="Your résumé never goes to an employer unless you approve that specific introduction. We confirm base pay, overtime, per diem, shift, and travel upfront." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Space Grotesk', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+          colors: { obsidian: '#050811', panel: '#0b1120' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #050811; color: #f8fafc; }
+  </style>
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-obsidian/90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3">
+        <div class="h-10 w-10 rounded-xl bg-cyan-500/15 border border-cyan-500/40 flex items-center justify-center text-cyan-400 font-mono font-bold text-lg">↻</div>
+        <div>
+          <span class="font-display font-bold tracking-tight text-lg text-white block leading-none">RECURSIVE RECRUITING</span>
+          <span class="font-mono text-[10px] text-amber-400 uppercase tracking-widest block mt-1">Candidate Representation</span>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm text-slate-300 font-medium">
+        <a href="#what-we-confirm" class="hover:text-cyan-400 transition">Pay &amp; Shift Transparency</a>
+        <a href="#apply" class="hover:text-cyan-400 transition">Submit Résumé</a>
+        <a href="/hire" class="text-slate-400 hover:text-white transition">For Employers</a>
+      </nav>
+      <a href="#apply" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-4 py-2.5 rounded-lg text-xs md:text-sm transition shadow-lg shadow-cyan-500/20">
+        Send your résumé
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-5 py-12 md:py-16 space-y-16">
+
+    <!-- Top Permission Promise -->
+    <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-5 flex items-start space-x-3">
+      <span class="font-mono text-emerald-400 font-bold text-sm shrink-0">PROMISE //</span>
+      <p class="text-sm text-emerald-200 font-medium leading-relaxed">
+        Your résumé never goes to an employer unless we speak with you first, tell you the company name, pay rate, shift, and jobsite, and you approve that specific introduction.
+      </p>
+    </div>
+
+    <!-- Hero -->
+    <section class="space-y-5">
+      <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">For Tradespeople, Technicians, Engineers &amp; Supervisors</span>
+      <h1 class="font-display text-3xl sm:text-5xl font-bold text-white leading-tight">
+        Real Numbers Before You Take an Interview.
+      </h1>
+      <p class="text-slate-300 text-base leading-relaxed max-w-3xl">
+        We do not post ghost jobs or blast your contact info to job boards. Tell us what you do, what licenses or skills you hold, and what it takes for you to make a move. When we have a role that matches your floor, we call you with the exact details first.
+      </p>
+    </section>
+
+    <!-- Pay, Shift, Per Diem & Travel Upfront -->
+    <section id="what-we-confirm" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-panel border border-slate-800 p-5 rounded-2xl space-y-2">
+        <span class="font-mono text-xs text-cyan-400 uppercase">01 // Base &amp; Overtime</span>
+        <h2 class="font-display font-bold text-white text-base">Straight-Time Pay Floor</h2>
+        <p class="text-xs text-slate-400 leading-relaxed">We confirm your minimum base hourly rate or salary and overtime structure before pitching you a role.</p>
+      </div>
+      <div class="bg-panel border border-slate-800 p-5 rounded-2xl space-y-2">
+        <span class="font-mono text-xs text-amber-400 uppercase">02 // Per Diem &amp; Mobilization</span>
+        <h2 class="font-display font-bold text-white text-base">Clear Travel Terms</h2>
+        <p class="text-xs text-slate-400 leading-relaxed">For road or rotational work, we verify daily per diem rates, travel pay, and rotation schedules upfront.</p>
+      </div>
+      <div class="bg-panel border border-slate-800 p-5 rounded-2xl space-y-2">
+        <span class="font-mono text-xs text-cyan-400 uppercase">03 // Shift &amp; Commute</span>
+        <h2 class="font-display font-bold text-white text-base">No Schedule Surprises</h2>
+        <p class="text-xs text-slate-400 leading-relaxed">Whether you want local day shift, 4x10s, 5x10s, or nights, we filter out roles that don't fit your schedule.</p>
+      </div>
+      <div class="bg-panel border border-slate-800 p-5 rounded-2xl space-y-2">
+        <span class="font-mono text-xs text-emerald-400 uppercase">04 // 100% Free to You</span>
+        <h2 class="font-display font-bold text-white text-base">Employers Pay All Fees</h2>
+        <p class="text-xs text-slate-400 leading-relaxed">Candidates never pay a cent, and our fee never comes out of your hourly rate, salary, or per diem.</p>
+      </div>
+    </section>
+
+    <!-- Candidate Form with Resume Upload & Optional Unchecked SMS -->
+    <section id="apply" class="bg-panel border border-slate-800 rounded-2xl p-6 md:p-10 space-y-6">
+      <div class="border-b border-slate-800 pb-4">
+        <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Candidate Intake</span>
+        <h2 class="font-display text-2xl font-bold text-white mt-1">Send Your Résumé or Work History</h2>
+        <p class="text-xs text-slate-400 mt-1">Direct contact: <a href="mailto:recursiverecruiting@gmail.com" class="text-cyan-400 underline">recursiverecruiting@gmail.com</a></p>
+      </div>
+
+      <form action="https://formsubmit.co/recursiverecruiting@gmail.com" method="POST" enctype="multipart/form-data" class="grid md:grid-cols-2 gap-5 text-xs md:text-sm">
+        <input type="hidden" name="_subject" value="New Candidate Submission — Recursive Recruiting" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Full Name *</label>
+          <input type="text" name="Full_Name" required placeholder="John Miller" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Mobile Phone *</label>
+          <input type="tel" name="Phone" required placeholder="(555) 234-5678" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Email Address *</label>
+          <input type="email" name="email" required placeholder="you@email.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Primary Trade / Discipline *</label>
+          <select name="Discipline" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none">
+            <option value="Electrician_Licensed">Journeyman / Master Electrician</option>
+            <option value="NETA_Substation_Relay">NETA / Substation / Relay Technician</option>
+            <option value="Controls_PLC_Commissioning">Controls, PLC or Commissioning Engineer</option>
+            <option value="Engineering_Industrial_ME_EE">Electrical, Mechanical or Industrial Engineer</option>
+            <option value="Superintendent_Foreman_PM">Superintendent, Foreman, PM or EHS Safety</option>
+            <option value="HVAC_Machinist_Maintenance">HVAC/Chiller Mechanic, Machinist or Maintenance</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Target Base Pay &amp; Per Diem *</label>
+          <input type="text" name="Target_Pay" required placeholder="e.g. $52/hr min + per diem if traveling, or $130k base" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Current City/State &amp; Travel Preference *</label>
+          <input type="text" name="Location_And_Travel" required placeholder="e.g. Local only, or open to travel / relocation" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Active Licenses or Certs (State &amp; Type, If Applicable)</label>
+          <input type="text" name="Licenses_Certs" placeholder="e.g. TX Journeyman #123456, NETA III, PE, OSHA 30" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Preferred Shift / Notice Period</label>
+          <input type="text" name="Shift_And_Notice" placeholder="e.g. Days only, available in 2 weeks" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Upload Résumé (Optional — PDF, DOC, DOCX)</label>
+          <input type="file" name="attachment" accept=".pdf,.doc,.docx,.txt" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-cyan-500/20 file:text-cyan-300 cursor-pointer" />
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Equipment Experience or Notes (Optional)</label>
+          <textarea name="Notes" rows="2" placeholder="Optional: Share switchgear brands, relay test sets, PLC platforms, or what you want in your next role." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none"></textarea>
+        </div>
+
+        <!-- Optional, Unchecked SMS Consent -->
+        <div class="md:col-span-2 bg-slate-950 p-4 rounded-xl border border-slate-800/90 text-xs text-slate-400 flex items-start space-x-3 leading-relaxed">
+          <input type="checkbox" name="SMS_Consent" id="sms_opt_in" value="Opted_In" class="mt-1 accent-cyan-400 h-4 w-4 rounded" />
+          <label for="sms_opt_in">
+            <strong>Optional SMS Updates:</strong> By checking this box, I agree to receive recruiting text messages from Recursive Recruiting about matching roles at the phone number provided. Message frequency varies; message and data rates may apply. Reply STOP to opt out or HELP for help at any time. Leaving this unchecked will not prevent us from reviewing your résumé by email or phone call. Mobile opt-in data is never sold or shared with third parties.
+          </label>
+        </div>
+
+        <div class="md:col-span-2 pt-2">
+          <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold py-4 rounded-xl transition shadow-lg shadow-cyan-500/20 text-sm cursor-pointer">
+            Send Your Résumé
+          </button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-800/80 py-10 text-xs text-slate-500 font-mono px-5">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>RECURSIVE RECRUITING • <a href="mailto:recursiverecruiting@gmail.com" class="text-cyan-400 hover:underline">recursiverecruiting@gmail.com</a></p>
+      <div class="flex gap-6 text-slate-400">
+        <a href="/" class="hover:text-cyan-400">Home</a>
+        <a href="/hire" class="hover:text-cyan-400">Employers</a>
+        <a href="/privacy" class="hover:text-cyan-400">Privacy</a>
+        <a href="/terms" class="hover:text-cyan-400">Terms &amp; EEO</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
