@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recursive Recruiting | Global Technical, Engineering & Commercial Talent Search</title>
+  <title>Recursive Recruiting | Technical, Field & Industrial Recruiting for Employers</title>
+  <meta name="description" content="Direct-hire recruiting for licensed trades, power infrastructure, engineering, controls, and field supervision. You pay only if someone we introduce starts." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +21,6 @@
           colors: {
             obsidian: '#050811',
             panel: '#0b1120',
-            cyanGlow: '#06b6d4',
-            volt: '#f59e0b',
           }
         }
       }
@@ -32,10 +31,10 @@
       background-color: #050811;
       color: #f8fafc;
       background-image: 
-        radial-gradient(circle at 15% 15%, rgba(6, 182, 212, 0.10) 0%, transparent 40%),
-        radial-gradient(circle at 85% 25%, rgba(245, 158, 11, 0.08) 0%, transparent 40%),
-        linear-gradient(to right, rgba(30, 41, 59, 0.22) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(30, 41, 59, 0.22) 1px, transparent 1px);
+        radial-gradient(circle at 15% 15%, rgba(6, 182, 212, 0.09) 0%, transparent 40%),
+        radial-gradient(circle at 85% 25%, rgba(245, 158, 11, 0.07) 0%, transparent 40%),
+        linear-gradient(to right, rgba(30, 41, 59, 0.2) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(30, 41, 59, 0.2) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
     }
   </style>
@@ -45,381 +44,357 @@
   <!-- Top Navigation -->
   <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-obsidian/90 backdrop-blur-md">
     <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <div class="h-10 w-10 rounded-xl bg-cyan-500/15 border border-cyan-500/40 flex items-center justify-center text-cyan-400 font-mono font-bold text-lg shadow-inner">
+      <a href="/" class="flex items-center space-x-3">
+        <div class="h-10 w-10 rounded-xl bg-cyan-500/15 border border-cyan-500/40 flex items-center justify-center text-cyan-400 font-mono font-bold text-lg">
           ↻
         </div>
         <div>
           <span class="font-display font-bold tracking-tight text-lg text-white block leading-none">RECURSIVE RECRUITING</span>
-          <span class="font-mono text-[10px] text-cyan-400 uppercase tracking-widest block mt-1">Global Technical • Engineering • Commercial Search</span>
+          <span class="font-mono text-[10px] text-cyan-400 uppercase tracking-widest block mt-1">Technical • Field • Industrial Search</span>
         </div>
-      </div>
+      </a>
       <nav class="hidden md:flex items-center space-x-8 text-sm text-slate-300 font-medium">
-        <a href="#loop" class="hover:text-cyan-400 transition">How It Works</a>
-        <a href="#bench" class="hover:text-cyan-400 transition">Talent Bench</a>
-        <a href="#calculator" class="hover:text-cyan-400 transition">Fee Calculator</a>
+        <a href="#how-it-works" class="hover:text-cyan-400 transition">How a search works</a>
+        <a href="#roles" class="hover:text-cyan-400 transition">Roles we fill</a>
+        <a href="#fees" class="hover:text-cyan-400 transition">Fees</a>
+        <a href="/candidates" class="text-amber-400 hover:text-amber-300 transition">For candidates</a>
       </nav>
-      <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-4 py-2.5 rounded-lg text-xs md:text-sm transition shadow-lg shadow-cyan-500/20">
-        Get Started
+      <a href="#send-role" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-4 py-2.5 rounded-lg text-xs md:text-sm transition shadow-lg shadow-cyan-500/20">
+        Send a role
       </a>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto px-5 py-12 md:py-20 space-y-24">
 
-    <!-- Hero Section -->
+    <!-- Employer Hero Section -->
     <section class="grid lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-7 space-y-6">
         <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
-          <span class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
-          <span>GLOBAL TALENT ACQUISITION // ALL INDUSTRIES & TECHNICAL SECTORS</span>
+          <span class="h-2 w-2 rounded-full bg-cyan-400"></span>
+          <span>FOR EMPLOYERS // TECHNICAL, FIELD &amp; INDUSTRIAL ROLES</span>
         </div>
-        <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.1]">
-          Better Systems. <br/>
-          Better Teams. <br/>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-amber-400">Better Careers.</span>
+        <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.08]">
+          Send the role. <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-amber-400">We’ll call you back.</span>
         </h1>
         <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl">
-          Whether you are scaling an engineering team, hiring corporate leadership, or mobilizing licensed field specialists anywhere in the world, <strong>Recursive Recruiting</strong> delivers pre-vetted talent across every industry—complete with credential verification when roles require strict compliance.
+          A person calls you within one business day, confirms the required license or skill, jobsite, shift, and pay band, and screens candidates before you see a résumé. You pay only if someone we introduce starts.
         </p>
         <div class="flex flex-wrap gap-4 pt-2">
-          <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3.5 rounded-xl transition shadow-lg shadow-cyan-500/25 text-sm">
-            Get Started With Recursive Recruiting
+          <a href="#send-role" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3.5 rounded-xl transition shadow-lg shadow-cyan-500/25 text-sm">
+            Send a role
           </a>
-          <a href="#bench" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold px-6 py-3.5 rounded-xl transition text-sm">
-            Explore Talent Bench
+          <a href="/hire" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold px-6 py-3.5 rounded-xl transition text-sm">
+            View screening &amp; vendor details
           </a>
         </div>
-        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-400">
-          <div>
-            <span class="text-white font-bold text-base block">$0 Upfront</span>
-            Contingency Search
-          </div>
-          <div>
-            <span class="text-cyan-400 font-bold text-base block">Global Reach</span>
-            Remote • Hybrid • On-Site
-          </div>
-          <div>
-            <span class="text-amber-400 font-bold text-base block">Verified</span>
-            Skills & License Vetting
-          </div>
+
+        <!-- Single-Line Candidate Off-Ramp -->
+        <div class="pt-5 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
+          <span>Looking for work? Your résumé never goes to an employer unless you approve that specific introduction.</span>
+          <a href="/candidates" class="font-mono text-amber-400 hover:underline font-semibold shrink-0">For candidates →</a>
         </div>
       </div>
 
-      <!-- Right Column: Universal Sector & Credential Matrix -->
-      <div class="lg:col-span-5 bg-panel/90 border border-slate-800 rounded-2xl p-6 space-y-5 shadow-2xl">
+      <!-- Right Column: Labeled Role Brief (Not a Person) -->
+      <div class="lg:col-span-5 bg-panel/95 border border-slate-800 rounded-2xl p-6 space-y-4 shadow-2xl">
         <div class="flex items-center justify-between border-b border-slate-800 pb-4">
           <div>
-            <span class="font-mono text-xs text-cyan-400 uppercase">Universal Coverage Matrix</span>
-            <h2 class="font-display font-bold text-white text-lg">Global Verticals & Optional Certs</h2>
+            <span class="font-mono text-[11px] text-amber-400 uppercase tracking-wider">Example of a role brief (not a person)</span>
+            <h2 class="font-display font-bold text-white text-lg mt-0.5">How We Scope Your Requisition</h2>
           </div>
-          <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs">WORLDWIDE</span>
+          <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-slate-300 font-mono text-[11px]">SAMPLE BRIEF</span>
         </div>
 
-        <div class="space-y-3 text-xs">
-          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/80 space-y-1">
-            <div class="flex justify-between font-semibold text-white">
-              <span>Engineering, Tech & Operations</span>
-              <span class="text-cyan-400 font-mono">BSEE / ME / SW / Six Sigma</span>
-            </div>
-            <p class="text-slate-400">Software, Hardware, Industrial, Continuous Improvement, Controls, Manufacturing, and Project Management.</p>
+        <div class="space-y-3 text-xs font-mono">
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800/80">
+            <span class="text-slate-500 block text-[10px]">ROLE TITLE</span>
+            <span class="text-white font-sans font-semibold text-sm">Relay &amp; Substation Testing Technician (or Controls Lead)</span>
           </div>
-
-          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/80 space-y-1">
-            <div class="flex justify-between font-semibold text-white">
-              <span>Power, Infrastructure & Licensed Trades</span>
-              <span class="text-amber-400 font-mono">State License / NETA / NFPA</span>
-            </div>
-            <p class="text-slate-400">Master & Journeyman Electricians, NETA Testing Techs, Commissioning Engineers, HVAC, and Precision Machinists.</p>
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800/80">
+            <span class="text-slate-500 block text-[10px]">SITE &amp; ENVIRONMENT</span>
+            <span class="text-slate-200 font-sans">On-site industrial facility, substation, or mission-critical construction site</span>
           </div>
-
-          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/80 space-y-1">
-            <div class="flex justify-between font-semibold text-white">
-              <span>Corporate, Finance, Sales & Executive</span>
-              <span class="text-emerald-400 font-mono">Direct-Hire Screening</span>
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800/80">
+            <span class="text-slate-500 block text-[10px]">MUST-HAVE LICENSE OR SKILL</span>
+            <span class="text-cyan-400 font-sans font-medium">State Journeyman/Master Electrician License (issuing state &amp; # checked) or NETA Level II–IV / PLC Studio 5000</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800/80">
+              <span class="text-slate-500 block text-[10px]">SHIFT &amp; TRAVEL</span>
+              <span class="text-slate-200 font-sans">5x10s, night shift, or rotational travel</span>
             </div>
-            <p class="text-slate-400">Account Executives, Estimators, Supply Chain & Procurement, EHS Safety, Operations Leaders, and Corporate Staff.</p>
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800/80">
+              <span class="text-slate-500 block text-[10px]">PAY BAND</span>
+              <span class="text-amber-400 font-sans font-medium">Base hourly/salary + OT &amp; per diem terms</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4-Step Recursive Loop -->
-    <section id="loop" class="space-y-8">
+    <!-- 4 Process Cards: Plain Language -->
+    <section id="how-it-works" class="space-y-6">
       <div class="max-w-2xl space-y-2">
-        <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Continuous-Improvement Search Architecture</span>
-        <h2 class="font-display text-3xl font-bold text-white">How the Recursive Loop Works</h2>
-        <p class="text-slate-400 text-sm">Engineered for fast, accurate hiring across both corporate seats and heavily regulated technical roles worldwide.</p>
+        <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Straightforward Process</span>
+        <h2 class="font-display text-3xl font-bold text-white">How a Search Works</h2>
+        <p class="text-slate-400 text-sm">What happens after you send us an open role.</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <div class="bg-panel border border-slate-800 p-6 rounded-2xl space-y-3">
-          <span class="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">01 // INTAKE & VETTING</span>
-          <h3 class="font-display font-bold text-white text-base">Adaptive Screening</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">Whether your role requires a specific state/national trade license, engineering degree, or proven operational track record, we verify qualifications upfront.</p>
+          <span class="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">01</span>
+          <h3 class="font-display font-bold text-white text-base">You send the role</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Tell us the role title, site location, shift, pay band, and the non-negotiable licenses, certifications, or equipment experience required.</p>
         </div>
 
         <div class="bg-panel border border-slate-800 p-6 rounded-2xl space-y-3">
-          <span class="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">02 // COMP & ROLE ALIGNMENT</span>
-          <h3 class="font-display font-bold text-white text-base">Zero-Friction Matching</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">We lock in compensation expectations, remote/on-site availability, and shift or travel requirements before scheduling interviews.</p>
+          <span class="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">02</span>
+          <h3 class="font-display font-bold text-white text-base">A person calls you</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">We call within one business day to confirm the jobsite details, interview process, and put our fee agreement in writing before starting.</p>
         </div>
 
         <div class="bg-panel border border-slate-800 p-6 rounded-2xl space-y-3">
-          <span class="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">03 // ZERO UPFRONT COST</span>
-          <h3 class="font-display font-bold text-white text-base">$0 Retainer Contingency</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">Reviewing candidates and interviewing our bench costs nothing. Placement fees apply only when you hire a candidate and they start Day 1.</p>
+          <span class="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">03</span>
+          <h3 class="font-display font-bold text-white text-base">We screen first</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">We check state license numbers and issuing registries, confirm hands-on tool or control-system experience, and verify shift, commute, and pay fit.</p>
         </div>
 
         <div class="bg-panel border border-slate-800 p-6 rounded-2xl space-y-3">
-          <span class="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">04 // CONTINUOUS FEEDBACK</span>
-          <h3 class="font-display font-bold text-white text-base">Closed-Loop Calibration</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">Every interview and placement feeds performance data back into our search criteria so each candidate batch gets sharper and faster.</p>
+          <span class="font-mono text-xs text-cyan-400 px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20">04</span>
+          <h3 class="font-display font-bold text-white text-base">You pay if they start</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Reviewing candidate profiles and interviewing costs nothing. Our direct-hire fee applies only when a candidate you hire starts on Day 1.</p>
         </div>
       </div>
+
+      <p class="text-xs text-slate-400 font-mono bg-slate-950/80 border border-slate-800/80 px-4 py-3 rounded-xl">
+        We keep notes on what you accept or pass so the next introduction is closer. Candidates can correct or delete their information at any time — see our <a href="/privacy" class="text-cyan-400 hover:underline">Privacy Policy</a>.
+      </p>
     </section>
 
-    <!-- Filterable Live Talent Bench -->
-    <section id="bench" class="space-y-8">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div class="space-y-2">
-          <span class="font-mono text-xs text-amber-400 uppercase tracking-widest">Sample Redacted Profiles</span>
-          <h2 class="font-display text-3xl font-bold text-white">Pre-Vetted Talent Bench</h2>
-          <p class="text-slate-400 text-sm">Filter sample profiles across engineering, corporate operations, automation, and licensed trades.</p>
-        </div>
-        <!-- Filter Buttons -->
-        <div class="flex flex-wrap gap-2 text-xs font-mono">
-          <button type="button" onclick="filterBench('all')" id="btn-all" class="bench-btn bg-cyan-500 text-slate-950 font-bold px-3.5 py-2 rounded-lg transition">All Categories</button>
-          <button type="button" onclick="filterBench('engineering')" id="btn-engineering" class="bench-btn bg-slate-900 text-slate-300 border border-slate-800 hover:border-cyan-500/50 px-3.5 py-2 rounded-lg transition">Engineering & Corporate</button>
-          <button type="button" onclick="filterBench('power')" id="btn-power" class="bench-btn bg-slate-900 text-slate-300 border border-slate-800 hover:border-cyan-500/50 px-3.5 py-2 rounded-lg transition">Power & Licensed Trades</button>
-          <button type="button" onclick="filterBench('manufacturing')" id="btn-manufacturing" class="bench-btn bg-slate-900 text-slate-300 border border-slate-800 hover:border-cyan-500/50 px-3.5 py-2 rounded-lg transition">Automation & Manufacturing</button>
-        </div>
+    <!-- 3 Role Families (Searches, Not Fake People) -->
+    <section id="roles" class="space-y-8">
+      <div class="space-y-2">
+        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest">Search Specialties</span>
+        <h2 class="font-display text-3xl font-bold text-white">Roles We Fill</h2>
+        <p class="text-slate-400 text-sm">Focused technical and field categories—not generalist corporate staffing. Listed below are role families we recruit for, not individual candidate listings.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6" id="bench-grid">
-        <!-- Card 1 -->
-        <div data-category="power" class="bench-card bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Family 1 -->
+        <div class="bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
           <div class="space-y-3">
             <div class="flex justify-between items-center">
-              <span class="text-xs font-mono text-cyan-400">PROFILE // RR-101</span>
-              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">$54–$62/hr</span>
+              <span class="text-xs font-mono text-cyan-400">SEARCH FAMILY // 01</span>
+              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">Power &amp; Trades</span>
             </div>
-            <h3 class="font-display font-bold text-white text-lg">NETA Level III Relay Tech</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">7 yrs MV/HV switchgear acceptance, Doble/Megger/SEL relay testing. Active NFPA 70E. Open to national travel or relocation.</p>
+            <h3 class="font-display font-bold text-white text-lg">Licensed Trades &amp; Power</h3>
+            <ul class="text-xs text-slate-300 space-y-2 leading-relaxed list-disc list-inside">
+              <li>Journeyman &amp; Master Electricians</li>
+              <li>NETA Level II–IV Testing Technicians</li>
+              <li>MV/HV Switchgear &amp; Relay Technicians</li>
+              <li>Commercial/Industrial Chiller &amp; HVAC Techs</li>
+              <li>Precision CNC &amp; Manual Machinists</li>
+            </ul>
           </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
-            <span>CERT: NETA III Verified</span>
-            <a href="#contact" class="text-cyan-400 hover:underline">Request Resume →</a>
+          <div class="pt-3 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+            SCREENING: Issuing state license #, expiration date, voltage/equipment scope, shift &amp; travel fit.
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div data-category="engineering" class="bench-card bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+        <!-- Family 2 -->
+        <div class="bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
           <div class="space-y-3">
             <div class="flex justify-between items-center">
-              <span class="text-xs font-mono text-cyan-400">PROFILE // RR-102</span>
-              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">$125k–$145k</span>
+              <span class="text-xs font-mono text-cyan-400">SEARCH FAMILY // 02</span>
+              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">Engineering</span>
             </div>
-            <h3 class="font-display font-bold text-white text-lg">Continuous Improvement / IE Lead</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">6+ yrs high-volume production line optimization, Lean Six Sigma Black Belt, OEE bottleneck elimination & global NPI launches.</p>
+            <h3 class="font-display font-bold text-white text-lg">Engineering &amp; Controls</h3>
+            <ul class="text-xs text-slate-300 space-y-2 leading-relaxed list-disc list-inside">
+              <li>Controls &amp; PLC Automation Engineers</li>
+              <li>Commissioning Engineers (IST Levels 1–5)</li>
+              <li>Electrical &amp; Mechanical Engineers (BSEE/BSME)</li>
+              <li>Industrial &amp; Continuous Improvement Engineers</li>
+              <li>Manufacturing &amp; Process Engineers</li>
+            </ul>
           </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
-            <span>CERT: Lean Six Sigma</span>
-            <a href="#contact" class="text-cyan-400 hover:underline">Request Resume →</a>
+          <div class="pt-3 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+            SCREENING: Platforms (Studio 5000, TIA Portal, SCADA), degree/PE status, commissioning levels.
           </div>
         </div>
 
-        <!-- Card 3 -->
-        <div data-category="power" class="bench-card bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+        <!-- Family 3 -->
+        <div class="bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
           <div class="space-y-3">
             <div class="flex justify-between items-center">
-              <span class="text-xs font-mono text-cyan-400">PROFILE // RR-103</span>
-              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">$48–$56/hr</span>
+              <span class="text-xs font-mono text-cyan-400">SEARCH FAMILY // 03</span>
+              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">Field Leadership</span>
             </div>
-            <h3 class="font-display font-bold text-white text-lg">Licensed Commercial Electrical Foreman</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">Active Journeyman/Master Electrician License, 9 yrs mission-critical power distribution, industrial conduit & UPS installations.</p>
+            <h3 class="font-display font-bold text-white text-lg">Field Supervision &amp; Ops</h3>
+            <ul class="text-xs text-slate-300 space-y-2 leading-relaxed list-disc list-inside">
+              <li>Electrical &amp; Mechanical Superintendents</li>
+              <li>Commercial &amp; Industrial General Foremen</li>
+              <li>Construction &amp; Technical Project Managers</li>
+              <li>Site EHS Safety Managers (OSHA 30 / CHST)</li>
+              <li>Plant Maintenance &amp; Reliability Leads</li>
+            </ul>
           </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
-            <span>LICENSE: State Verified</span>
-            <a href="#contact" class="text-cyan-400 hover:underline">Request Resume →</a>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div data-category="engineering" class="bench-card bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex justify-between items-center">
-              <span class="text-xs font-mono text-cyan-400">PROFILE // RR-104</span>
-              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">$135k–$160k</span>
-            </div>
-            <h3 class="font-display font-bold text-white text-lg">Lead Commissioning Engineer (Cx)</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">BSEE, 6 yrs hyperscale data center & industrial facility Levels 3–5 IST commissioning. Open to global deployment.</p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
-            <span>DEGREE: BSEE / IST L1–L5</span>
-            <a href="#contact" class="text-cyan-400 hover:underline">Request Resume →</a>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div data-category="manufacturing" class="bench-card bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex justify-between items-center">
-              <span class="text-xs font-mono text-cyan-400">PROFILE // RR-105</span>
-              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">$115k–$135k</span>
-            </div>
-            <h3 class="font-display font-bold text-white text-lg">Controls & PLC Automation Eng.</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">Allen-Bradley Studio 5000, Siemens TIA Portal, SCADA integration, and robotic cell commissioning. Available in 2 weeks.</p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
-            <span>SPEC: PLC / SCADA / HMI</span>
-            <a href="#contact" class="text-cyan-400 hover:underline">Request Resume →</a>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div data-category="manufacturing" class="bench-card bg-panel border border-slate-800 p-6 rounded-2xl space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex justify-between items-center">
-              <span class="text-xs font-mono text-cyan-400">PROFILE // RR-106</span>
-              <span class="text-xs font-mono text-amber-400 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">$40–$50/hr</span>
-            </div>
-            <h3 class="font-display font-bold text-white text-lg">Precision CNC & Manual Machinist</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">5-axis programming/setup, manual lathe & mill mastery, tight-tolerance aerospace & industrial fabrication, GD&T inspection.</p>
-          </div>
-          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
-            <span>SPEC: GD&T / 5-Axis / Manual</span>
-            <a href="#contact" class="text-cyan-400 hover:underline">Request Resume →</a>
+          <div class="pt-3 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+            SCREENING: Crew headcount managed, project budget/MW size, safety credentials, mobilization timeline.
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Working Interactive Placement Fee Calculator -->
-    <section id="calculator" class="bg-panel border border-slate-800 rounded-2xl p-6 md:p-10 space-y-8">
-      <div class="max-w-2xl space-y-2">
-        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest">Transparent Direct-Hire Economics</span>
-        <h2 class="font-display text-2xl md:text-3xl font-bold text-white">Interactive Placement Fee Calculator</h2>
-        <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
-          Slide the base hourly rate (or equivalent annual salary on a 2,080-hour work year) and contingency percentage below to estimate your one-time direct-hire placement fee.
-        </p>
+    <!-- Fee Terms Block + Estimate Calculator -->
+    <section id="fees" class="bg-panel border border-slate-800 rounded-2xl p-6 md:p-10 space-y-10">
+      <div class="space-y-4">
+        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest">Contingency Terms</span>
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-white">How Our Fees Work</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 pt-2 text-xs">
+          <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl space-y-1.5">
+            <span class="font-mono text-cyan-400 uppercase block">15%–25% of Base Pay</span>
+            <p class="text-slate-300 leading-relaxed">The exact percentage depends on the role and is locked in a signed written agreement before our search starts.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl space-y-1.5">
+            <span class="font-mono text-cyan-400 uppercase block">2,080-Hour Base Only</span>
+            <p class="text-slate-300 leading-relaxed">Overtime, bonuses, and per diem are excluded. Hourly roles are calculated on base hourly rate × 2,080 hours.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl space-y-1.5">
+            <span class="font-mono text-cyan-400 uppercase block">$0 Due Until Start</span>
+            <p class="text-slate-300 leading-relaxed">Nothing is owed upfront. Invoice date, payment terms, and replacement guarantee terms are specified in your signed agreement.</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl space-y-1.5">
+            <span class="font-mono text-amber-400 uppercase block">Vendor Packet</span>
+            <p class="text-slate-300 leading-relaxed">Public contact is <a href="mailto:recursiverecruiting@gmail.com" class="text-cyan-400 underline">recursiverecruiting@gmail.com</a>. Standard agency agreement &amp; W-9 sent on request.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="space-y-6">
-        <!-- Slider 1: Hourly / Annual Base -->
-        <div class="space-y-2">
-          <div class="flex justify-between text-xs font-mono">
-            <span class="text-slate-300 uppercase">Candidate Base Compensation</span>
-            <span id="rate-label" class="text-cyan-400 font-bold text-sm">$50 / hr ($104,000 / yr)</span>
+      <!-- Calculator below the fee block, labeled as an estimate -->
+      <div class="border-t border-slate-800 pt-8 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h3 class="font-display text-lg font-bold text-white">Fee Estimate Calculator</h3>
+            <p class="text-xs text-slate-400">Use the sliders to estimate direct-hire cost on base compensation. Estimate only—not a binding rate.</p>
           </div>
-          <input type="range" id="rate-slider" min="20" max="120" value="50" step="1" class="w-full accent-cyan-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer" />
+          <span class="font-mono text-[11px] text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded">ESTIMATE ONLY</span>
         </div>
 
-        <!-- Slider 2: Fee Percentage -->
-        <div class="space-y-2">
-          <div class="flex justify-between text-xs font-mono">
-            <span class="text-slate-300 uppercase">Contingency Fee Tier (15% – 25%)</span>
-            <span id="fee-label" class="text-amber-400 font-bold text-sm">18%</span>
+        <div class="space-y-5">
+          <div class="space-y-2">
+            <div class="flex justify-between text-xs font-mono">
+              <span class="text-slate-300 uppercase">Base Hourly Rate (or Annual Base Equivalent)</span>
+              <span id="rate-label" class="text-cyan-400 font-bold">$50 / hr ($104,000 / yr)</span>
+            </div>
+            <input type="range" id="rate-slider" min="25" max="110" value="50" step="1" class="w-full accent-cyan-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer" />
           </div>
-          <input type="range" id="fee-slider" min="15" max="25" value="18" step="1" class="w-full accent-amber-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer" />
-        </div>
 
-        <!-- Output Cards -->
-        <div class="grid sm:grid-cols-2 gap-4 pt-2">
-          <div class="bg-slate-950 border border-slate-800/90 p-5 rounded-xl">
-            <span class="font-mono text-[11px] text-slate-400 uppercase block">Annualized Base Salary (2,080 Hrs)</span>
-            <span id="annual-output" class="font-display text-2xl md:text-3xl font-bold text-white mt-1 block">$104,000</span>
-            <span class="font-mono text-[11px] text-slate-500 mt-1 block">Calculated on Base Pay Only (Excludes OT & Bonuses)</span>
+          <div class="space-y-2">
+            <div class="flex justify-between text-xs font-mono">
+              <span class="text-slate-300 uppercase">Estimated Fee Percentage (15% – 25%)</span>
+              <span id="fee-label" class="text-amber-400 font-bold">18%</span>
+            </div>
+            <input type="range" id="fee-slider" min="15" max="25" value="18" step="1" class="w-full accent-amber-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer" />
           </div>
-          <div class="bg-slate-950 border border-slate-800/90 p-5 rounded-xl">
-            <span class="font-mono text-[11px] text-cyan-400 uppercase block">Estimated One-Time Placement Fee</span>
-            <span id="fee-output" class="font-display text-2xl md:text-3xl font-bold text-cyan-400 mt-1 block">$18,720</span>
-            <span class="font-mono text-[11px] text-emerald-400 mt-1 block">$0 Due Until Candidate Starts</span>
+
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div class="bg-slate-950 border border-slate-800/90 p-5 rounded-xl">
+              <span class="font-mono text-[11px] text-slate-400 uppercase block">Estimated Annual Base (2,080 Hrs)</span>
+              <span id="annual-output" class="font-display text-2xl font-bold text-white mt-1 block">$104,000</span>
+              <span class="font-mono text-[11px] text-slate-500 mt-1 block">Base pay only — excludes OT, per diem &amp; bonuses</span>
+            </div>
+            <div class="bg-slate-950 border border-slate-800/90 p-5 rounded-xl">
+              <span class="font-mono text-[11px] text-cyan-400 uppercase block">Estimated One-Time Fee</span>
+              <span id="fee-output" class="font-display text-2xl font-bold text-cyan-400 mt-1 block">$18,720</span>
+              <span class="font-mono text-[11px] text-slate-400 mt-1 block">Estimate only — exact rate set in written agreement</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Universal Contact & Intake Form (Wired to recursiverecruiting@gmail.com) -->
-    <section id="contact" class="bg-panel border border-slate-800 rounded-2xl p-6 md:p-10 space-y-6">
+    <!-- Employer Requisition Form (No SMS Consent Box) -->
+    <section id="send-role" class="bg-panel border border-slate-800 rounded-2xl p-6 md:p-10 space-y-6">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-5">
         <div>
-          <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Direct Dispatch & Intake</span>
-          <h2 class="font-display text-2xl md:text-3xl font-bold text-white mt-1">Get Started With Recursive Recruiting</h2>
+          <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Employer Intake</span>
+          <h2 class="font-display text-2xl md:text-3xl font-bold text-white mt-1">Send a Role</h2>
+          <p class="text-xs text-slate-400 mt-1">We will call you back within one business day to confirm specs and send our written fee agreement.</p>
         </div>
-        <span class="font-mono text-xs text-slate-300 bg-slate-950 border border-slate-800 px-3 py-1.5 rounded-lg self-start">
-          DIRECT EMAIL &amp; AI TRIAGE
-        </span>
+        <a href="/candidates" class="font-mono text-xs text-amber-400 hover:underline self-start">
+          Candidate? Send résumé here →
+        </a>
       </div>
 
       <form action="https://formsubmit.co/recursiverecruiting@gmail.com" method="POST" class="grid md:grid-cols-2 gap-5 text-xs md:text-sm">
-        <!-- FormSubmit Configuration -->
-        <input type="hidden" name="_subject" value="New Lead — Recursive Recruiting Website" />
+        <input type="hidden" name="_subject" value="New Employer Requisition — Recursive Recruiting" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_captcha" value="false" />
 
         <div>
-          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Full Name *</label>
-          <input type="text" name="Full_Name" required placeholder="Jane Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Your Name *</label>
+          <input type="text" name="Name" required placeholder="Mike Reynolds" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
         </div>
 
         <div>
-          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">I Am A... *</label>
-          <select name="Profile_Type" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none">
-            <option value="Employer_Hiring">Hiring Manager / Employer — Looking for Talent</option>
-            <option value="Candidate_General">Candidate — Engineering, Tech, Operations or Corporate</option>
-            <option value="Candidate_Licensed">Candidate — Licensed Trade, Electrical, NETA or Field Tech</option>
-          </select>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Work Email *</label>
+          <input type="email" name="email" required placeholder="mreynolds@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
         </div>
 
         <div>
           <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Phone Number *</label>
-          <input type="tel" name="Phone_Number" required placeholder="+1 (555) 234-5678" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+          <input type="tel" name="Phone" required placeholder="(555) 234-5678" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
         </div>
 
         <div>
-          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Email Address *</label>
-          <input type="email" name="email" required placeholder="name@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Company Name *</label>
+          <input type="text" name="Company" required placeholder="Apex Power Services" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
         </div>
 
         <div>
-          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Industry / Sector *</label>
-          <select name="Industry_Sector" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none">
-            <option value="Engineering_Tech_Ops">Engineering, Software, Operations &amp; Management</option>
-            <option value="Manufacturing_Automation">Manufacturing, Automation, Controls &amp; Robotics</option>
-            <option value="Power_Electrical_Trades">Power Infrastructure, Electrical, NETA &amp; Skilled Trades</option>
-            <option value="Corporate_Sales_Finance">Corporate, Sales, Supply Chain, Finance &amp; Other</option>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Role Title *</label>
+          <input type="text" name="Role_Title" required placeholder="e.g. Journeyman Electrician / NETA III Tech / Controls Eng" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Kind of Work *</label>
+          <select name="Kind_Of_Work" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none">
+            <option value="Licensed_Trades_Power">Licensed Trades &amp; Power (Electrician, NETA, HVAC, Machinist)</option>
+            <option value="Engineering_Controls">Engineering &amp; Controls (PLC, Commissioning, BSEE/BSME, CI)</option>
+            <option value="Field_Supervision_Ops">Field Supervision &amp; Ops (Superintendent, Foreman, PM, EHS)</option>
           </select>
         </div>
 
         <div>
-          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">License or Certification (Optional — Only If Job Requires It)</label>
-          <select name="License_Or_Certification" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none">
-            <option value="None_Required">None Required / Standard Experience-Based Role</option>
-            <option value="State_Trade_License">State Electrician / Journeyman / Master Trade License (e.g. TDLR)</option>
-            <option value="NETA_Testing_Cert">NETA Level II–IV / Medium-High Voltage Testing Cert</option>
-            <option value="Engineering_PE_Degree">Engineering Degree (BSEE/BSME/CS) / PE License / Cx Cert</option>
-            <option value="Six_Sigma_PMP">Lean Six Sigma / PMP / Operational Certification</option>
-            <option value="Safety_Clearance_Other">OSHA / NFPA 70E / Security Clearance / Other</option>
-          </select>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Site Location *</label>
+          <input type="text" name="Site_Location" required placeholder="City, State (and travel % if mobile)" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Must-Have License or Skill *</label>
+          <input type="text" name="Must_Have_License_Or_Skill" required placeholder="e.g. State Journeyman License, NETA III, Studio 5000" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Pay Band (Base Hourly or Salary + Per Diem) *</label>
+          <input type="text" name="Pay_Band" required placeholder="e.g. $48–$56/hr + $120/day per diem, or $125k–$140k base" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
+        </div>
+
+        <div>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Shift &amp; Schedule *</label>
+          <input type="text" name="Shift" required placeholder="e.g. 5x10s days, night shift, 14/7 rotation" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none" />
         </div>
 
         <div class="md:col-span-2">
-          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Location, Compensation Target &amp; Role Details *</label>
-          <textarea name="Details" required rows="3" placeholder="Employers: Share open role title, location (or remote), and target pay range. Candidates: Share your target role, location, desired pay, and any license numbers if applicable." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none"></textarea>
-        </div>
-
-        <!-- Mandatory A2P 10DLC SMS Consent -->
-        <div class="md:col-span-2 bg-slate-950 p-4 rounded-xl border border-slate-800/90 text-xs text-slate-400 flex items-start space-x-3 leading-relaxed">
-          <input type="checkbox" name="SMS_Consent" id="sms_opt_in" value="Consented" required class="mt-1 accent-cyan-400 h-4 w-4 rounded" />
-          <label for="sms_opt_in">
-            By checking this box, I consent to receive transactional and recruiting-related SMS text messages and screening calls from <strong>Recursive Recruiting</strong> at the phone number provided. Message frequency varies; message and data rates may apply. Reply STOP to opt out or HELP for assistance at any time. Mobile opt-in data and phone numbers are never sold or shared with third parties for marketing purposes.
-          </label>
+          <label class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Additional Notes or Vendor Packet Request (Optional)</label>
+          <textarea name="Notes" rows="2" placeholder="Optional: Headcount needed, target start date, or let us know if you need our agency fee agreement & W-9 sent first." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none"></textarea>
         </div>
 
         <div class="md:col-span-2 pt-2">
           <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold py-4 rounded-xl transition shadow-lg shadow-cyan-500/20 text-sm cursor-pointer">
-            Submit to Recursive Recruiting
+            Send Role to Recursive Recruiting
           </button>
         </div>
       </form>
@@ -427,64 +402,40 @@
 
   </main>
 
-  <footer class="border-t border-slate-800/80 py-10 text-center text-xs text-slate-500 font-mono space-y-2 px-5">
-    <p class="text-slate-300 font-sans font-bold tracking-wide">RECURSIVE RECRUITING • GLOBAL TALENT ACQUISITION</p>
-    <p>ENGINEERING • OPERATIONS • TECHNOLOGY • SKILLED TRADES • CORPORATE</p>
-    <p class="text-[11px] text-slate-600 max-w-xl mx-auto pt-2">
-      Direct Contact: <a href="mailto:recursiverecruiting@gmail.com" class="text-cyan-400 hover:underline">recursiverecruiting@gmail.com</a> | Candidate profiles are presented to employers only after explicit candidate permission.
-    </p>
+  <footer class="border-t border-slate-800/80 py-10 text-xs text-slate-500 font-mono px-5">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="text-slate-300 font-sans font-bold">RECURSIVE RECRUITING</p>
+        <p class="text-[11px] mt-1">Public Contact: <a href="mailto:recursiverecruiting@gmail.com" class="text-cyan-400 hover:underline">recursiverecruiting@gmail.com</a> (Vendor packet available on request)</p>
+      </div>
+      <div class="flex flex-wrap gap-6 text-slate-400">
+        <a href="/hire" class="hover:text-cyan-400">Employers (/hire)</a>
+        <a href="/candidates" class="hover:text-cyan-400">Candidates (/candidates)</a>
+        <a href="/privacy" class="hover:text-cyan-400">Privacy Policy</a>
+        <a href="/terms" class="hover:text-cyan-400">Terms &amp; EEO</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- Bulletproof Interactive Scripts for Calculator & Bench Filter -->
   <script>
     function updateCalc() {
       var rateSlider = document.getElementById('rate-slider');
       var feeSlider = document.getElementById('fee-slider');
       if (!rateSlider || !feeSlider) return;
-
       var rate = parseInt(rateSlider.value, 10) || 50;
       var feePct = parseInt(feeSlider.value, 10) || 18;
       var annual = rate * 2080;
       var fee = Math.round(annual * (feePct / 100));
-
       document.getElementById('rate-label').textContent = '$' + rate + ' / hr ($' + annual.toLocaleString() + ' / yr)';
       document.getElementById('fee-label').textContent = feePct + '%';
       document.getElementById('annual-output').textContent = '$' + annual.toLocaleString();
       document.getElementById('fee-output').textContent = '$' + fee.toLocaleString();
     }
-
-    function filterBench(category) {
-      var cards = document.querySelectorAll('.bench-card');
-      var buttons = document.querySelectorAll('.bench-btn');
-
-      buttons.forEach(function(btn) {
-        btn.className = 'bench-btn bg-slate-900 text-slate-300 border border-slate-800 hover:border-cyan-500/50 px-3.5 py-2 rounded-lg transition';
-      });
-      var activeBtn = document.getElementById('btn-' + category);
-      if (activeBtn) {
-        activeBtn.className = 'bench-btn bg-cyan-500 text-slate-950 font-bold px-3.5 py-2 rounded-lg transition';
-      }
-
-      cards.forEach(function(card) {
-        if (category === 'all' || card.getAttribute('data-category') === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-
     document.addEventListener('DOMContentLoaded', function() {
-      var rateSlider = document.getElementById('rate-slider');
-      var feeSlider = document.getElementById('fee-slider');
-      if (rateSlider) {
-        rateSlider.addEventListener('input', updateCalc);
-        rateSlider.addEventListener('change', updateCalc);
-      }
-      if (feeSlider) {
-        feeSlider.addEventListener('input', updateCalc);
-        feeSlider.addEventListener('change', updateCalc);
-      }
+      var r = document.getElementById('rate-slider');
+      var f = document.getElementById('fee-slider');
+      if (r) { r.addEventListener('input', updateCalc); r.addEventListener('change', updateCalc); }
+      if (f) { f.addEventListener('input', updateCalc); f.addEventListener('change', updateCalc); }
       updateCalc();
     });
   </script>
